@@ -1,0 +1,53 @@
+<span style="font-family: verdana, geneva, sans-serif"
+  ><!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Sign Up</title>
+      <link rel="stylesheet" href="signin.css" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+    <body>
+      <div class="bg-img">
+      <div class="signup-box" id="phone">
+        <h1>Sign Up</h1>
+        <h4>It's free and only takes a minute</h4>
+        <form action="#" id="form" class="form" autocomplete="off">
+
+          <div class="form-box">
+            <label for="username">User Name</label>
+            <input type="text" id="username" data-name="User Name" />
+            <p>Error Message</p>
+          </div>
+          <div class="form-box">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" data-name="Email" />
+            <p>Error Message</p>
+          </div>
+          <div class="form-box">
+            <label for="Password">Password</label>
+            <input type="Password" id="Password" data-name="Password" />
+            <p>Error Message</p>
+          </div>
+          <div class="form-box">
+            <label for="Password2">Confirm Password</label>
+            <input
+              type="Password"
+              id="Password2"
+              data-name="Confirm Password"
+            />
+            <p>Error Message</p>
+          </div>
+          <input type="submit" onclick="myForm()" id="submit" value="Sign in" />
+        </form>
+        <p class="para-2">
+          Already have an account? <a href="login.html">Log in</a>
+        </p>
+      </div>
+    </div>
+      <script type="module" src="signin.js"></script>
+    </body>
+  </html>
+</span>
