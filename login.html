@@ -1,0 +1,73 @@
+<span style="font-family: verdana, geneva, sans-serif"
+  ><!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Login Page</title>
+      <link rel="stylesheet" href="signin.css" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+        rel="stylesheet"
+      />
+      <style>
+        button {
+          margin-top: 6px;
+        }
+        @media screen {
+          body {
+            /* background-image: url(images/bg4.png); */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-color: rgb(153, 141, 141);
+          }
+        }
+
+        @media (max-width: 550px) {
+          body {
+            /* width: fit-content; */
+            /* background-image: url(images/bg4.png); */
+            /* height: auto; */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <div class="bg-img">
+        <div class="login-box">
+          <h1>Login</h1>
+          <form class="form" autocomplete="off">
+            <div class="form-box">
+              <label>Email</label>
+              <input type="email" id="email" placeholder="" required />
+            </div>
+            <div class="form-box">
+              <label>Password</label>
+              <input type="password" id="password" placeholder="" required />
+            </div>
+            <button type="submit" id="login" onclick="formFill()">Login</button>
+            <br />
+            <br />
+            <input type="checkbox" />Forgot password
+          </form>
+        </div>
+      </div>
+    </body>
+    <script>
+      function formFill() {
+        var email = document.getElementById("email");
+        var password = document.getElementById("password");
+
+        if (email.value === "" || password.value === "") {
+          alert("Please fill the login page");
+        } else {
+          alert("Successfully Login to Savor Catering");
+          window.open("index.html");
+        }
+      }
+    </script>
+  </html>
+</span>
